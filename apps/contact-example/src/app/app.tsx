@@ -1,13 +1,14 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRoutes } from './AppRoutes';
+import { AppLayout } from './components/layout/AppLayout';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="contact-example" />
-    </div>
+    <BrowserRouter>
+      <AppLayout>
+        <AppRoutes />
+      </AppLayout>
+    </BrowserRouter>
   );
 }
 

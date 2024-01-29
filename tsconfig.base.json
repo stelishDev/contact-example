@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@libs/base-ui-components": [
+        "libs/base-ui-components/src/index.ts"
+      ],
+      "@libs/base-ui-layout": [
+        "libs/base-ui-layout/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
