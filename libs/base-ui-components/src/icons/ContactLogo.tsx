@@ -15,10 +15,10 @@ export const ContactLogo = () => {
           y2="278.83"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#672d86"></stop>
-          <stop offset="0.3" stop-color="#ef373e"></stop>
-          <stop offset="0.4" stop-color="#ef373e"></stop>
-          <stop offset="1" stop-color="#f68d76"></stop>
+          <stop offset="0" stopColor="#672d86"></stop>
+          <stop offset="0.3" stopColor="#ef373e"></stop>
+          <stop offset="0.4" stopColor="#ef373e"></stop>
+          <stop offset="1" stopColor="#f68d76"></stop>
         </linearGradient>
       </defs>
       <g id="Layer_2" data-name="Layer 2">

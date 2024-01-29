@@ -14,7 +14,7 @@ export const AppLayout = ({ children }: AppLayoutProps) => {
       <GlobalHeader onSearch={() => {}}>
         <></>
       </GlobalHeader>
-      <PageContent />
+      <PageContent children={children}/>
       <GlobalFooter>
         <></>
       </GlobalFooter>

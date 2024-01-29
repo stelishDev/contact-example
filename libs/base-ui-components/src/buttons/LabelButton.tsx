@@ -21,9 +21,9 @@ export const LabelButton: React.FC<LabelButtonProps> = ({
       rounded === ButtonRounded.Full && 'rounded-full',
       'border shadow-button-default hover:shadow-button-hover focus:shadow-button-focus disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none',
       variant === Variant.Primary &&
-        'border-talspot-primary bg-talspot-primary text-white',
+        'border-primary bg-primary text-white',
       variant === Variant.Secondary &&
-        'border-talspot-primary bg-white text-talspot-primary hover:bg-talspot-primary/5',
+        'border-primary bg-white text-primary hover:bg-primary/5',
       (variant === Variant.Primary || variant === Variant.Secondary) &&
         size === ButtonSize.Medium &&
         'min-w-[96px]'

@@ -14,9 +14,9 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        'talspot-primary': '#00a3ff',
-        'talspot-secondary': '#f9f9f9',
-        'talspot-tertiary': '#f9f9f9',
+        'primary': '#00a3ff',
+        'secondary': '#f9f9f9',
+        'tertiary': '#6e0d83',
         charcoal: '#303030',
         'light-grey': '#D9E0E2',
       },

@@ -1,0 +1,1 @@
+export { GeneralUserTable } from "./GeneralUserTable";
