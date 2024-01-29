@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 const { Title, Paragraph } = Typography;
 
 export const Form1 = () => {
-    const [tableData, setTableData] = useState<GeneralFormValues[]>([]);
+  const [tableData, setTableData] = useState<GeneralFormValues[]>([]);
   const formInstance = useForm<GeneralFormValues>({
     mode: 'onChange',
   });
@@ -29,16 +29,16 @@ export const Form1 = () => {
     <div className="w-full h-full" data-testid="home-page">
       <Title>First Form</Title>
       <Paragraph>
-        This is an example page to demonstrate an interview question given, to
-        gauge how to make components re-useable in a mono-repo in a given
-        scenario.
+        Essentially this example demontrates the two text box, one dropdown, a
+        table and a submit button on a page.
       </Paragraph>
 
       <Divider />
+      <Paragraph>Enter details in the form below, then press submit</Paragraph>
       <GeneralUserForm
         formInstance={formInstance}
         onSubmit={submit}
-        formId="test-form"
+        formId="test-form-1"
       />
 
       <Divider />
@@ -46,11 +46,13 @@ export const Form1 = () => {
       <GeneralUserTable data={tableData} />
       <Divider />
       <Link
-          to="/"
-          className="py-2 px-10 bg-charcoal rounded-lg hover:bg-charcoal/40"
-        >
-          <span className="text-white text-lg font-bold uppercase">Back to home</span>
-        </Link>
+        to="/"
+        className="py-2 px-10 bg-charcoal rounded-lg hover:bg-charcoal/40"
+      >
+        <span className="text-white text-lg font-bold uppercase">
+          Back to home
+        </span>
+      </Link>
     </div>
   );
 };

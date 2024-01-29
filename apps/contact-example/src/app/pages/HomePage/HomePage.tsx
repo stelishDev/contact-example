@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Typography, Divider } from 'antd';
+import { Typography, Divider, Alert } from 'antd';
 
 const { Title, Paragraph } = Typography;
 
@@ -10,13 +10,15 @@ export const HomePage = () => {
       <Paragraph>
         This is an example page to demonstrate an interview question given, to
         gauge how to make components re-useable in a mono-repo in a given
-        scenario.
+        scenario. This also demonstrates the UI portion of the scenario only. If given more
+        time will include api intergration with serverless functions, and
+        react-query or rtk-query in the UI.
       </Paragraph>
 
       <Divider />
 
       <Paragraph>
-        Select on of the options below to see a form.
+        Select on of the options below to see a form example.
       </Paragraph>
       <div className="flex space-x-3">
         <Link
@@ -34,6 +36,12 @@ export const HomePage = () => {
           </span>
         </Link>
       </div>
+      <Alert
+        className="max-w-[500px] mt-4"
+        message="Please note"
+        description="This example was essentially whipped up in a day, and has alot of room for improvement. Test coverage is limited, storybook, and naming conventions could be improved, and input error validation does not work currently."
+        type="warning"
+      />
     </div>
   );
 };

@@ -29,16 +29,16 @@ export const Form2 = () => {
     <div className="w-full h-full" data-testid="home-page">
       <Title>Second Form</Title>
       <Paragraph>
-        This is an example page to demonstrate an interview question given, to
-        gauge how to make components re-useable in a mono-repo in a given
-        scenario.
+        Essentially this example demontrates the two text box, one dropdown, a
+        table and a submit button on a page.
       </Paragraph>
 
       <Divider />
+      <Paragraph>Enter details in the form below, then press submit</Paragraph>
       <GeneralUserForm
         formInstance={formInstance}
         onSubmit={submit}
-        formId="test-form"
+        formId="test-form-2"
       />
 
       <Divider />
