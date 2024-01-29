@@ -10,7 +10,7 @@ export const HomePage = () => {
       <Paragraph>
         This is an example page to demonstrate an interview question given, to
         gauge how to make components re-useable in a mono-repo in a given
-        scenario. This also demonstrates the UI portion of the scenario only. If given more
+        scenario. This demonstrates the UI portion of the scenario only, and if given more
         time will include api intergration with serverless functions, and
         react-query or rtk-query in the UI.
       </Paragraph>

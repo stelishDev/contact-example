@@ -5,14 +5,16 @@ import * as icons from "./index";
 
 # Iconography
 
-Here is a list of all the icons used in the HPSC GUI application.  
+Here is a list of all the icons used in the Contact example application.  
 
 ## Icon Gallery&nbsp;  
 
 <IconGallery>
   {Object.entries(icons).map(([name, Icon]) => (
-    <IconItem name={name} className="bg-slate-200">
-        <Icon className="h-[128px] w-[128px] fill-current stroke-current" />
+    <IconItem name={name}>
+      <div className="bg-gray-100">
+        <Icon className="h-[128px] w-[128px] fill-current stroke-current bg-gray-100" />
+      </div>
     </IconItem>
   ))}
 </IconGallery>
