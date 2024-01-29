@@ -31,5 +31,5 @@ export type GeneralUserTableProps = {
 export const GeneralUserTable: React.FC<GeneralUserTableProps> = ({
   data,
 }: GeneralUserTableProps) => {
-  return <Table dataSource={data || []} columns={columns} />;
+  return <Table dataSource={data || []} columns={columns} className='max-w-[500px]'/>;
 };
