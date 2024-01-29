@@ -14,6 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "types": ["node", "vite/client", "vitest", "@testing-library/jest-dom"],
     "paths": {
       "@libs/base-ui-components": [
         "libs/base-ui-components/src/index.ts"

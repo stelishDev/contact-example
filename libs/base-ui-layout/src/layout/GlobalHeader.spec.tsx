@@ -1,32 +1,18 @@
-import { render } from '@testing-library/react';
-
+import { render, fireEvent, screen } from '@testing-library/react';
 import { GlobalHeader } from './GlobalHeader';
 
-describe('GlobalHeader', () => {
-  it('should render successfully', () => {
-    const { baseElement } = render(
-      <GlobalHeader>
-        <></>
-      </GlobalHeader>
-    );
-    expect(baseElement).toBeTruthy();
-  });
-});
-
-it('renders children', () => {
-  const { getByText } = render(
-    <GlobalHeader>
-      <div>Child Component</div>
+test('renders children inside GlobalHeader', () => {
+  render(
+    <GlobalHeader onSearch={() => {}}>
+      <div>Test Children</div>
     </GlobalHeader>
   );
-  expect(getByText('Child Component')).toBeInTheDocument();
+  expect(screen.getByText('Test Children')).toBeInTheDocument();
 });
 
-it('renders "talspot" text', () => {
-  const { getByText } = render(
-    <GlobalHeader>
-      <></>
-    </GlobalHeader>
-  );
-  expect(getByText('talspot')).toBeInTheDocument();
+test('calls onSearch prop when search button is clicked', () => {
+  const onSearchMock = vi.fn();
+  render(<GlobalHeader onSearch={onSearchMock}><></></GlobalHeader>);
+  fireEvent.click(screen.getByTestId('header-search-button'));
+  expect(onSearchMock).toHaveBeenCalled();
 });
