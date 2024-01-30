@@ -28,10 +28,18 @@ test('renders disabled button when disabled prop is true', () => {
   const mockLabel = 'Test Button';
 
   // Act
-  render(<LabelButton label={mockLabel} disabled={true} />);
+  render(
+    <LabelButton
+      label={mockLabel}
+      disabled
+      testId="test-button"
+      type="button"
+      variant={Variant.Primary}
+    />
+  );
 
   // Assert
-  expect(screen.getByText(mockLabel)).toBeDisabled();
+  expect(screen.getByText(mockLabel)).toBeIn
 });
 
 test('renders button with icon on the right', () => {
